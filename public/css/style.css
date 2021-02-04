@@ -1,0 +1,170 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-login{
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    position:relative;
+}
+.header-text{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #d3b2c1, #b6dbb8);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    text-align: center;
+}
+
+.login{
+    width:865px;
+    height:460px;
+    background-color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius:10px;
+}
+.login_form--center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -65%);
+}
+.login__box{
+    width:50%
+}
+.form_input{
+    width:75%;
+    padding:10px;
+    border:none;
+    margin-top: 10px;
+}
+.form_input:focus{
+    outline:none;
+    box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #ff7730;
+    border-radius:10px;
+}
+.form_input:focus:valid{
+    border-bottom: 3px solid #35ce2f;
+}
+.form_input:placeholder-shown ~ label{
+    transform:translate(10px,-35px);
+    opacity:0;
+}
+.form_input ~ label{
+    transform:translate(10px,0);
+    opacity:1;
+    transition: all .4s;
+}
+
+.profile{
+    background-color:#b8d8b7;
+    width:800px;
+    height:36vh;
+    margin:0 auto;
+}
+.img{
+    width:30%;
+    height:100%;
+    float: left;
+}
+.img__size{
+    height:100%;
+    width:100%;
+}
+.info{
+    width:55%;
+    float:right;
+}
+
+.details{
+    padding-top:30px;
+    width: 70%;
+    margin: 0 auto;
+    transition: all .3s;
+}
+.details img{
+    width:35%;
+    position: relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-20%);
+}
+.details a{
+    text-decoration: none;
+}
+.details__card{
+    background:#3a94f549;
+    padding:20px;
+    transition: all .4s;
+}
+
+.details__card:hover{
+    transform: scale(1.1) translateY(-5%);
+    box-shadow:0 10px 15px rgba(0, 0, 0, .5);
+}
+.details:hover .details__card:not(:hover){
+    transform: scale(.9);
+}
+.pointer{
+    cursor: pointer;
+}
+.teacher_section{
+    width:100%;
+    min-height:100vh;
+    background-color:#338633
+}
+.techer_section--left{
+    height: 100vh;
+    position:fixed;
+}
+.techer_section--right{
+    position: absolute;
+    right: 0;
+}
+.teacher_info{
+    position: relative;
+    transform: translate(10px, 155px);
+}
+
+.details__card--teacher{
+    background:#65ff6549;
+    padding:50px;
+    transition: all .4s;
+}
+.details__card--teacher:hover{
+    transform: scale(1.1) translateY(-5%);
+    box-shadow:0 10px 15px rgba(0, 0, 0, .5);
+    outline:5px solid #0ac50a;
+    outline-offset: 20px;
+}
+.teacher-details{
+    transition: all .5s;
+}
+.teacher-details:hover .details__card--teacher:not(:hover){
+    transform: scale(.9);
+}
+.fee__section{
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.student-class{
+    background:#0d0e0d49;
+    padding:60px;
+    transition: all .4s;
+    color: #b8d8b7;
+}
+.student-class a{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+}

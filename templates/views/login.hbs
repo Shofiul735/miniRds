@@ -1,0 +1,23 @@
+{{> header}}
+    <section class="min-vh-100 bg-login">
+        <h1 class="text-center pt-5 header-text text-uppercase">{{title}}</h1>
+        <div class="login">
+            <div class="login_form--center login__box">
+                <form action="/" method="post">
+                <input name="id" class="form_input" type="text" id="id" placeholder="Your id" autocomplete="off" required>
+                <br>
+                <label class="text-secondary" for="id">Your Id</label>
+                <br>
+                <input name="password" class="form_input" type="password" id="pass" placeholder="Your Password" required>
+                <br>
+                <label class="text-secondary" for="pass">Your password</label>
+                <br>
+                <div class="mt-2">
+                    <input name="login" class="btn btn-outline-primary text-uppercase font-weight-bold mr-2" type="submit" value="student">
+                    <input name="login" class="btn btn-outline-success text-uppercase font-weight-bold"type="submit" value="teacher">    
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+{{> footer}}

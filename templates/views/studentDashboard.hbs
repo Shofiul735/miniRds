@@ -1,0 +1,81 @@
+{{>header}}
+
+<section class="studentSection bg-primary min-vh-100 pt-3">
+    <div class="profile">
+        <div class="img">
+            <img class="img__size" src="images/male_student.jpg" alt="student Picture">
+        </div>
+        <div class="info ">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>{{data.name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>{{data.class}}</td>
+                    </tr>
+                    <tr>
+                        <td>Roll</td>
+                        <td>{{data.roll}}</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>{{data.gender}}</td>
+                    </tr>
+                    <tr>
+                        <form action="/student" method="post">
+                            <td colspan="2"><input  class="btn btn-outline-danger d-inline" name="studentLogout" value="Log Out" type="submit" href="#"></td>
+                        </form>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="details_section">
+            <div class="container">
+                <div class="details">
+                    <div class="row">
+                        <div class="col-6 mb-4 pointer">
+                            <div class="details__card">
+                            <a href="/student/attendance">
+                              <h5 class="text-center text-white">Attendance</h5>
+                              <img src="images/attendance.svg" alt="attendance icon">
+                            </a> 
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4 pointer">
+                            <div class="details__card">
+                                <a href="student/test">
+                              <h5 class="text-center text-white">Test</h5>
+                              <img src="images/test.svg" alt="test icon">
+                             </a>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4 pointer">
+                            <div class="details__card">
+                                <a href="/student/notice">
+                                    <h5 class="text-center text-white">Notice</h5>
+                                    <img src="images/notice.svg" alt="notice icon">
+                             </a>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4 pointer">
+                            <div class="details__card">
+                                <a href="/student/class">
+                              <h5 class="text-center text-white">Classes</h5>
+                              <img src="images/class.svg" alt="class icon">
+                             </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+{{>footer}}

@@ -1,0 +1,28 @@
+{{>header}}
+    <section class="container">
+        <div class="row">
+            <div class="col-8">
+                <table class="table">
+                     <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                            {{#each data}}
+                            <tr>
+                                <th scope="row"> </th>
+                                <td class="text-uppercase">{{this.subject}}</td>
+                                <td>{{this.date}}</td>
+                                <td><a class="btn btn-outline-warning" href="/student/test/{{this.subject}}">Start</a></td>
+                            </tr>
+                            {{/each}}
+                     </tbody>
+                </table>           
+            </div>
+        </div>
+    </section>
+{{>footer}}

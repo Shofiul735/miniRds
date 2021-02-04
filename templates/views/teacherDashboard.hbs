@@ -1,0 +1,54 @@
+{{>header}}
+
+<section class="teacher_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-light techer_section--left">
+                <div class="teacher_info">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Name</td>
+                                <td>{{data.name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Subject</td>
+                                <td>{{data.subject}}</td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>{{data.gender}}</td>
+                            </tr>
+                            <tr>
+                                <form action="/teacher" method="post">
+                                    <td colspan="2"><input  class="btn btn-outline-danger d-inline" name="teacherLogout" value="Log Out" type="submit" href="#"></td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <div class="col-9 techer_section--right">
+            <div class="mt-5">
+                <div class="container">
+                    <div class="details teacher-details">
+                        <div class="row">
+                                {{#each data.classes}}
+                                <div class="col-4 mb-4 pointer">
+                                    <div class="details__card--teacher">
+                                        <a href="/teacher/class">
+                                        <h5 class="text-center text-white text-capitalize font-weight-bolder">{{this}}</h5>
+                                        </a> 
+                                    </div>
+                                </div> 
+                                {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    </div>
+</section>
+
+{{>footer}}

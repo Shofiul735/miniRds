@@ -1,0 +1,14 @@
+<section class="fee__section">
+        <div class="container">
+                    <div class="row">
+                        {{#each data.classes}}
+                        <div class="col-4 mb-4 pointer">
+                            <div class="student-class">
+                            <a href="/student/attendance/{{this}}" target="_blank">
+                              <h5 class="text-center text-white text-capitalize">{{this}}</h5>
+                            </a> 
+                            </div>
+                        </div>
+                        {{/each}}
+        </div>
+    </section>

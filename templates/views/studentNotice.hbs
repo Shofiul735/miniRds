@@ -1,0 +1,17 @@
+{{> header}}
+    <section class="container mt-5">
+        <div class="row">
+            {{#each data}}
+            <div class="col-10">
+                <h5 class="text-capitalize">title: {{this.title}}</h5>
+                <h6>Date:{{this.date}}</h6> 
+                <hr>   
+                <p class="text-justify">
+                {{this.details}}
+                </p>
+                <hr>
+             </div>
+             {{/each}}
+        </div>
+    </section>
+{{> footer}}

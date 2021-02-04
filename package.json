@@ -1,0 +1,27 @@
+{
+  "name": "minirds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shofiul735/miniRDS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shofiul735/miniRDS/issues"
+  },
+  "homepage": "https://github.com/Shofiul735/miniRDS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.10",
+    "peer": "^0.6.1"
+  }
+}
